@@ -46,31 +46,34 @@
 </head>
 
 <body class="font-Lexend">
-    <header class="bg-body mb-6 md:mb-20">
-        <!-- navbar starts -->
-        <nav
-            class="px-1 pb-6 md:pb-16 pt-6 container mx-auto flex flex-col-reverse md:flex-row gap-3 md:gap-0 items-center justify-between">
-            <button class="btn bg-primary px-8 text-xl font-semibold">Blog</button>
-            <div class="flex items-center gap-4">
-                <img src="assets/logo.png" alt="">
-                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-            </div>
-            <!-- balance div -->
-            <div class="text-xl font-medium text-dark flex items-center">
-                <img class="mr-3" src="assets/coin.png" alt="">
-                <span>5500</span>
-                <span class="ml-1">BDT</span>
-            </div>
-        </nav>
-        <!-- navbar ends -->
+    <header class="sticky top-0 backdrop-blur-sm">
+        <div class="bg-body mb-3 md:mb-6">
+            <!-- navbar starts -->
+            <nav
+                class="px-1 py-6 container mx-auto flex  md:flex-row gap-3 md:gap-0 items-center justify-between">
+                <button class="btn bg-primary px-4 md:px-8 text-xs md:text-xl font-semibold">Blog</button>
+                <div class="flex items-center gap-4">
+                    <div><img class="w-full" src="assets/logo.png" alt=""></div>
+                    <h1 class="text-xs md:text-xl font-semibold text-center">Donate Bangladesh</h1>
+                </div>
+                <!-- balance div -->
+                <div class="text-xs md:text-xl font-medium text-dark flex items-center">
+                    <div class="mr-2"><img class="w-full" src="assets/coin.png" alt=""></div>
+                    <span id="balance">5500</span>
+                    <span class="ml-1">BDT</span>
+                </div>
+            </nav>
+            <!-- navbar ends -->
+        </div>
+
+        <!-- donation and history buttons -->
+        <div class="flex justify-center items-center gap-4 mb-8">
+            <button class="btn bg-primary px-4 md:px-8 text-sm md:text-xl font-semibold">Donation</button>
+            <button class="btn btn-outline px-4 md:px-8 text-dark text-sm md:text-xl font-semibold">History</button>
+        </div>
     </header>
 
     <main class="container mx-auto">
-        <!-- donation and history buttons -->
-        <div class="flex justify-center items-center gap-4 mb-8">
-            <button class="btn bg-primary px-8 text-xl font-semibold">Donation</button>
-            <button class="btn btn-outline px-8 text-dark text-xl font-semibold">History</button>
-        </div>
 
         <!-- cards section starts -->
         <section class="px-1 space-y-8">
@@ -86,7 +89,7 @@
                     <!-- donation amount -->
                     <button class="bg-secondary px-8 py-3 rounded-lg flex items-center text-dark space-x-2">
                         <img src="assets/coin.png" alt="">
-                        <span>0</span>
+                        <span id="donate-amount-1">0</span>
                         <span>BDT</span>
                     </button>
                     <!-- card title -->
@@ -97,10 +100,10 @@
                         supporting the relief efforts and making a positive impact on the lives of those in need. <br>
                     </p>
                     <!-- amount input field -->
-                    <input class="mt-6 border p-2 md:p-5 w-full rounded-lg" type="text"
+                    <input id="donate-input-1" class="mt-6 border p-2 md:p-5 w-full rounded-lg" type="text"
                         placeholder="Write Donation Amount">
                     <!-- donate amount field button -->
-                    <button class="btn bg-primary px-8 text-xl font-semibold w-full">Donate Now</button>
+                    <button id="donate-now-1" class="btn bg-primary px-8 text-xl font-semibold w-full">Donate Now</button>
                 </div>
             </div>
 
@@ -173,9 +176,13 @@
         <!-- cards section ends -->
     </main>
 
-    <footer>
+    <footer class="bg-body min-h-9 md:min-h-36 mt-10 md:mt-20">
 
     </footer>
+
+    <!-- js file -->
+     <script src="js/donate.js"></script>
+     <script src="js/utilities.js"></script>
 </body>
 
 </html>
