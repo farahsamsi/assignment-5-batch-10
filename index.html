@@ -68,15 +68,15 @@
 
         <!-- donation and history buttons -->
         <div class="flex justify-center items-center gap-4 mb-8">
-            <button class="btn bg-primary px-4 md:px-8 text-sm md:text-xl font-semibold">Donation</button>
-            <button class="btn btn-outline px-4 md:px-8 text-dark text-sm md:text-xl font-semibold">History</button>
+            <button id="show-donation-section" class="btn bg-primary px-4 md:px-8 text-sm md:text-xl font-semibold">Donation</button>
+            <button id="show-history-section" class="btn btn-outline px-4 md:px-8 text-dark text-sm md:text-xl font-semibold">History</button>
         </div>
     </header>
 
     <main class="container mx-auto">
 
         <!-- cards section starts -->
-        <section class="px-1 space-y-8">
+        <section id="donation-section" class="px-1 space-y-8">
             <!-- card 1 -->
             <div class="p-4 md:p-8 border rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                 <!-- img -->
@@ -174,6 +174,18 @@
 
         </section>
         <!-- cards section ends -->
+
+        <!-- history section starts -->
+         <section id="history-section" class="hidden px-1 space-y-8">
+            <!-- history list -->
+            <div class="space-y-6">
+                <div class="space-y-4 border rounded-2xl p-8">
+                    <h1 class="text-black text-xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                    <p class="text-dark font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+                </div>
+            </div>
+         </section>
+        <!-- history section ends -->
     </main>
 
     <footer class="bg-body min-h-9 md:min-h-36 mt-10 md:mt-20">
