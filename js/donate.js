@@ -10,7 +10,7 @@ document.getElementById("donate-now-1").addEventListener("click", function () {
   const balanceInnerText1 = getInnerTextById("donate-amount-1");
   const balance = getInnerTextById("balance");
 
-  if (inputMoney1 < 0 || inputMoney1 > balance || isNaN(inputMoney1)) {
+  if (inputMoney1 <= 0 || inputMoney1 > balance || isNaN(inputMoney1)) {
     return alert("Invalid Donation Amount");
   } else {
     // adding donation amount in the donate button on top of the cards
@@ -44,7 +44,7 @@ document.getElementById("donate-now-2").addEventListener("click", function () {
   const balanceInnerText2 = getInnerTextById("donate-amount-2");
   const balance = getInnerTextById("balance");
 
-  if (inputMoney2 < 0 || inputMoney2 > balance || isNaN(inputMoney2)) {
+  if (inputMoney2 <= 0 || inputMoney2 > balance || isNaN(inputMoney2)) {
     return alert("Invalid Donation Amount");
   } else {
     // adding donation amount in the donate button on top of the cards
@@ -76,7 +76,7 @@ document.getElementById("donate-now-3").addEventListener("click", function () {
   const balanceInnerText3 = getInnerTextById("donate-amount-3");
   const balance = getInnerTextById("balance");
 
-  if (inputMoney3 < 0 || inputMoney3 > balance || isNaN(inputMoney3)) {
+  if (inputMoney3 <= 0 || inputMoney3 > balance || isNaN(inputMoney3)) {
     return alert("Invalid Donation Amount");
   } else {
     // adding donation amount in the donate button on top of the cards
