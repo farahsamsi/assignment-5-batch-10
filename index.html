@@ -46,13 +46,13 @@
 </head>
 
 <body class="font-Lexend">
-    <header class="sticky top-0 backdrop-blur-sm">
-        <div class="bg-body mb-3 md:mb-6">
+    <header class="sticky top-0 z-10 backdrop-filter backdrop-blur-lg ">
+        <div class="bg-[#e0d5c0] bg-opacity-30 mb-3 md:mb-6">
             <!-- navbar starts -->
             <nav class="px-1 py-6 container mx-auto flex  md:flex-row gap-3 md:gap-0 items-center justify-between">
-                <button class="btn bg-primary px-4 md:px-8 text-xs md:text-xl font-semibold">Blog</button>
-                <div class="flex items-center gap-4">
-                    <div><img class="w-full" src="assets/logo.png" alt=""></div>
+                <button id="show-blog-page" class="btn bg-primary px-4 md:px-8 text-xs md:text-xl font-semibold">Blog</button>
+                <div class="flex items-center md:gap-4">
+                    <div class="w-12 h-12"><img class="w-full" src="assets/logo.png" alt=""></div>
                     <h1 class="text-xs md:text-xl font-semibold text-center">Donate Bangladesh</h1>
                 </div>
                 <!-- balance div -->
@@ -66,7 +66,7 @@
         </div>
 
         <!-- donation and history buttons -->
-        <div class="flex justify-center items-center gap-4 mb-8">
+        <div class="flex justify-center items-center gap-4 xl:pb-8 m-4 lg:m-0">
             <button id="show-donation-section"
                 class="btn bg-primary px-4 md:px-8 text-sm md:text-xl font-semibold">Donation</button>
             <button id="show-history-section"
@@ -81,12 +81,12 @@
             <!-- card 1 -->
             <div class="p-4 md:p-8 border rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                 <!-- img -->
-                <div class="bg-noakhali rounded-xl"
+                <div class="bg-noakhali rounded-xl xl:min-h-[29rem]"
                     style="background-position: center; background-repeat: no-repeat; background-size: cover;">
                     <img class="w-full md:hidden" src="assets/noakhali.png" alt="">
                 </div>
                 <!-- content -->
-                <div class="space-y-4">
+                <div class="space-y-4 xl:flex xl:flex-col xl:justify-between xl:items-start">
                     <!-- donation amount -->
                     <button class="bg-secondary px-8 py-3 rounded-lg flex items-center text-dark space-x-2">
                         <img src="assets/coin.png" alt="">
@@ -94,7 +94,7 @@
                         <span>BDT</span>
                     </button>
                     <!-- card title -->
-                    <h1 id="donation-title-1" class="text-black text-xl font-bold">Donate for Flood at Noakhali,
+                    <h1 id="donation-title-1" class="text-black text-xl font-bold">Flood Relief at Noakhali,
                         Bangladesh</h1>
                     <p class="text-dark font-light">The recent floods in Noakhali have caused significant damage to
                         homes infrastructure. Your donation will help provide essential supplies and to those affected
@@ -102,8 +102,9 @@
                         supporting the relief efforts and making a positive impact on the lives of those in need. <br>
                     </p>
                     <!-- amount input field -->
-                    <input id="donate-input-1" class="mt-6 border p-2 md:p-5 w-full rounded-lg" type="text"
-                        placeholder="Write Donation Amount">
+                    <input id="donate-input-1"
+                        class="mt-6 border p-2 md:p-5 w-full rounded-lg [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        type="number" placeholder="Write Donation Amount">
                     <!-- donate amount field button -->
                     <button id="donate-now-1" class="btn bg-primary px-8 text-xl font-semibold w-full">Donate
                         Now</button>
@@ -129,12 +130,12 @@
             <!-- card 2 -->
             <div class="p-4 md:p-8 border rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                 <!-- img -->
-                <div class="bg-feni rounded-xl"
+                <div class="bg-feni rounded-xl xl:min-h-[29rem]"
                     style="background-position: center; background-repeat: no-repeat; background-size: cover;">
                     <img class="w-full md:hidden" src="assets/feni.png" alt="">
                 </div>
                 <!-- content -->
-                <div class="space-y-4">
+                <div class="space-y-4 xl:flex xl:flex-col xl:justify-between xl:items-start">
                     <!-- donation amount -->
                     <button class="bg-secondary px-8 py-3 rounded-lg flex items-center text-dark space-x-2">
                         <img src="assets/coin.png" alt="">
@@ -151,8 +152,9 @@
                         those in urgent need.
                     </p>
                     <!-- amount input field -->
-                    <input id="donate-input-2" class="mt-6 border p-2 md:p-5 w-full rounded-lg" type="text"
-                        placeholder="Write Donation Amount">
+                    <input id="donate-input-2"
+                        class="mt-6 border p-2 md:p-5 w-full rounded-lg [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        type="number" placeholder="Write Donation Amount">
                     <!-- donate amount field button -->
                     <button id="donate-now-2" class="btn bg-primary px-8 text-xl font-semibold w-full">Donate
                         Now</button>
@@ -178,12 +180,12 @@
             <!-- card 3 -->
             <div class="p-4 md:p-8 border rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                 <!-- img -->
-                <div class="bg-quotaProtest rounded-xl"
+                <div class="bg-quotaProtest rounded-xl xl:min-h-[29rem]"
                     style="background-position: center; background-repeat: no-repeat; background-size: cover;">
                     <img class="w-full md:hidden" src="assets/quota-protest.png" alt="">
                 </div>
                 <!-- content -->
-                <div class="space-y-4">
+                <div class="space-y-4 xl:flex xl:flex-col xl:justify-between xl:items-start">
                     <!-- donation amount -->
                     <button class="bg-secondary px-8 py-3 rounded-lg flex items-center text-dark space-x-2">
                         <img src="assets/coin.png" alt="">
@@ -202,8 +204,9 @@
                         need.
                     </p>
                     <!-- amount input field -->
-                    <input id="donate-input-3" class="mt-6 border p-2 md:p-5 w-full rounded-lg" type="text"
-                        placeholder="Write Donation Amount">
+                    <input id="donate-input-3"
+                        class="mt-6 border p-2 md:p-5 w-full rounded-lg [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        type="number" placeholder="Write Donation Amount">
                     <!-- donate amount field button -->
                     <button id="donate-now-3" class="btn bg-primary px-8 text-xl font-semibold w-full">Donate
                         Now</button>
@@ -242,7 +245,7 @@
 
     </footer>
 
-    <!-- js file -->
+    <!-- js files -->
     <script src="js/donate.js"></script>
     <script src="js/utilities.js"></script>
 </body>

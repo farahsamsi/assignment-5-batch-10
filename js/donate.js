@@ -4,7 +4,6 @@ const cardTitle1 = document.getElementById("donation-title-1").innerText;
 const cardTitle2 = document.getElementById("donation-title-2").innerText;
 const cardTitle3 = document.getElementById("donation-title-3").innerText;
 
-
 // card 1
 document.getElementById("donate-now-1").addEventListener("click", function () {
   const inputMoney1 = getInputFieldValueById("donate-input-1");
@@ -17,7 +16,6 @@ document.getElementById("donate-now-1").addEventListener("click", function () {
     // adding donation amount in the donate button on top of the cards
     const donateAmount = inputMoney1 + balanceInnerText1;
     document.getElementById("donate-amount-1").innerText = donateAmount;
-
 
     // subtracting donation amount from total balance
     const remainingBalance = balance - inputMoney1;
@@ -35,14 +33,13 @@ document.getElementById("donate-now-1").addEventListener("click", function () {
     // modal
     my_modal_1.showModal();
 
-    console.log(inputMoney1)
-
+    console.log(inputMoney1);
   }
 });
 
 // card 2
 document.getElementById("donate-now-2").addEventListener("click", function () {
-    console.log('btn 2');
+  console.log("btn 2");
   const inputMoney2 = getInputFieldValueById("donate-input-2");
   const balanceInnerText2 = getInnerTextById("donate-amount-2");
   const balance = getInnerTextById("balance");
@@ -74,7 +71,7 @@ document.getElementById("donate-now-2").addEventListener("click", function () {
 
 // card 3
 document.getElementById("donate-now-3").addEventListener("click", function () {
-    console.log('btn 3');
+  console.log("btn 3");
   const inputMoney3 = getInputFieldValueById("donate-input-3");
   const balanceInnerText3 = getInnerTextById("donate-amount-3");
   const balance = getInnerTextById("balance");
@@ -118,3 +115,13 @@ document
     showSectionById("history-section");
     bgColorOfButton("show-history-section");
   });
+
+//   blog page from blog button
+document
+  .getElementById("show-blog-page")
+  .addEventListener("click", function () {
+    console.log("blog btn clicked");
+    window.location.href = "/blog.html";
+  });
+
+

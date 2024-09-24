@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | DOM</title>
+
+    <!-- google font CDN : Lexend  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind CSS configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#F3F3F3', // btn 
+                        body: '#F9F7F3', // navbar and footer
+                        dark: '#585858',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                    backgroundImage: {
+                        noakhali: "url('./assets/noakhali.png')",
+                        feni: "url('./assets/feni.png')",
+                        quotaProtest: "url('./assets/quota-protest.png')",
+                    },
+                },
+            },
+        }
+    </script>
+
+</head>
+
+<body class="text-Lexend">
+    <header class="bg-body">
+        <!-- navbar starts -->
+        <nav class="px-1 py-6 container mx-auto flex  md:flex-row gap-3 md:gap-0 items-center justify-between">
+            <button id="show-home-page"
+                class="btn bg-primary px-4 md:px-8 text-xs md:text-xl font-semibold">Home</button>
+            <div class="flex items-center md:gap-4">
+                <div class="w-12 h-12"><img class="w-full" src="assets/logo.png" alt=""></div>
+                <h1 class="text-xs md:text-xl font-semibold text-center">Donate Bangladesh</h1>
+            </div>
+            <!-- balance div -->
+            <div class="text-xs md:text-xl font-medium text-dark flex items-center">
+                <div class="mr-2"><img class="w-full" src="assets/coin.png" alt=""></div>
+                <span id="balance">5500</span>
+                <span class="ml-1">BDT</span>
+            </div>
+        </nav>
+        <!-- navbar ends -->
+    </header>
+
+    <main class="px-1 container mx-auto">
+        <h1 class="my-4 md:my-8 text-2xl md:text-4xl font-extrabold ">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+    </main>
+
+    <!-- js files -->
+    <script src="js/donate.js"></script>
+    <script src="js/utilities.js"></script>
+
+    <script>
+        document
+            .getElementById("show-home-page")
+            .addEventListener("click", function () {
+                console.log('home btn clicked')
+                window.location.href = "/index.html";
+            });
+    </script>
+</body>
+
+</html>
