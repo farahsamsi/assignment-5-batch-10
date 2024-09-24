@@ -117,11 +117,11 @@ document
   });
 
 //   blog page from blog button
-document
-  .getElementById("show-blog-page")
-  .addEventListener("click", function () {
-    console.log("blog btn clicked");
-    window.location.href = "/blog.html";
-  });
+// document
+//   .getElementById("show-blog-page")
+//   .addEventListener("click", function () {
+//     console.log("blog btn clicked");
+//     window.location.href = "/blog.html";
+//   });
 
 
